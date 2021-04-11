@@ -11,6 +11,3 @@
   This App is constructed using tKinter module in Python.
 
 
-
-
-# Upcoming Update : Value entry from Keyboard 
