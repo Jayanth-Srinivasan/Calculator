@@ -1,22 +1,26 @@
 from tkinter import *
+# Inisilizing tKinter window(root)
 win=Tk()
 win.title("Calculator")
 EnterNum=""
 TxtInp=StringVar()
+# This Function Displays the Entered Values
 def Clicked(num):
     global EnterNum
     EnterNum = EnterNum + str(num)
-    #print(EnterNum)
     TxtInp.set(EnterNum)
+# This Function Clears the Display
 def ClearClick():
     global EnterNum
     TxtInp.set("")
     EnterNum=""
+# This Function Evaluvates the Result 
 def EqualClick():
     global EnterNum
     Ans=str(eval(EnterNum))
     TxtInp.set(Ans)
     EnterNum=""
+# This Function Calculates Factorial 
 def fact():
     global EnterNum
     f=1
